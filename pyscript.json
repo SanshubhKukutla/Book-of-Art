@@ -1,0 +1,7 @@
+{
+    "packages": ["openAi"],
+    "environment": {
+        "DEBUG": true,
+        "API_KEY": "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"
+    }
+}
