@@ -7,6 +7,8 @@ from nltk import word_tokenize
 from nltk.probability import FreqDist
 import string
 
+nltk.download("punkt")
+
 
 input_paragraph = """
     Once upon a time in a charming village nestled between emerald forests and crystal-clear streams, there lived a kind-hearted blacksmith named Oliver. Oliver was known throughout the village for his remarkable craftsmanship and the gentle spirit with which he approached his work.
@@ -43,46 +45,6 @@ def sentence_similarity(sent1, sent2):
     vector2 = [1 if word in sent2 else 0 for word in words]
 
     return 1 - cosine_similarity([vector1], [vector2])[0][0]
-
-
-"""
-# Create a similarity matrix
-similarity_matrix = np.zeros((len(sentences), len(sentences)))
-
-for i in range(len(sentences)):
-    for j in range(len(sentences)):
-        if i != j:
-            similarity_matrix[i][j] = sentence_similarity(sentences[i], sentences[j])
-
-# Use PageRank to rank the sentences
-nx_graph = nx.from_numpy_array(similarity_matrix)
-scores = nx.pagerank(nx_graph)
-
-# Get the most important sentence
-summary_sentence = sentences[max(scores, key=scores.get)]
-
-# Tokenize the summary sentence
-words = word_tokenize(summary_sentence.lower())
-
-# Remove punctuation and stop words
-filtered_words = [
-    word for word in words if word not in string.punctuation and word not in stop_words
-]
-
-# Use NLTK's FreqDist to find the most common words
-fdist = FreqDist(filtered_words)
-
-# Get the most common words as keywords
-keywords = [
-    word for word, freq in fdist.most_common(5)
-]  # You can change 5 to any desired number of keywords
-
-keywords_string = ""
-for word in keywords:
-    keywords_string += word + " "
-
-print(keywords_string)
-"""
 
 
 def get_keywords():
@@ -126,6 +88,3 @@ def get_keywords():
         keywords_string += word + " "
 
     return keywords_string
-
-
-"get_keywords()"
