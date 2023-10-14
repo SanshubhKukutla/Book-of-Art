@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
