@@ -10,10 +10,16 @@ import string
 nltk.download("punkt")
 nltk.download("stopwords")
 
-desired_num = 5
+desired_num = 9
 
 input_paragraph = """
-    Hello Kitty once went to shop. She found a cat. Hello Kitty killed the cat. Then she ran away from teh cops and hide in a sewer. Hello Kitty died of starvation
+   Once upon a time, in a quiet little village, there was a small bakery with a big secret. The baker, named Emma, had a magical touch. Everything she baked turned into something special.
+
+One sunny morning, a little girl named Lily visited the bakery. She chose a plain-looking cookie and took a bite. To her surprise, it tasted like her favorite ice cream.
+
+Lily told her friends, and soon the bakery became famous. People came from far and wide to taste Emma's magical treats. Each bite brought a smile to their faces.
+
+Emma's bakery wasn't just a place for delicious pastries; it was a place where ordinary moments turned into extraordinary memories. And so, in the heart of the village, Emma's bakery shared the sweetest magic of all—the magic of happiness.
     """
 
 # Tokenize the paragraph into sentences
