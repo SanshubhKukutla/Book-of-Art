@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,13 +11,13 @@
       <div class="div">
         <p class="text-wrapper">Book of Art was created .....</p>
         <div class="overlap">
-          <img class="vector" src="{{ url_for('static', filename='images/vector-4-1.svg') }}" />
+          <img class="vector" src="{{ url_for('static', filename='images/vector.svg') }}" />
           <img class="img" src="{{ url_for('static', filename='images/vector-5-1.svg') }}" />
         </div>
         <div class="overlap-group">
           <div class="overlap-2">
-            <img class="vector-2" src="{{ url_for('static', filename='images/vector-7-1.svg') }}" />
-            <img class="vector-3" src="{{ url_for('static', filename='images/vector-8-1.svg') }}" />
+            <img class="vector-2" src="{{ url_for('static', filename='images/vector-2.svg') }}" />
+            <img class="vector-3" src="{{ url_for('static', filename='images/vector-3.svg') }}" />
             <div class="text-wrapper-2">Welcome!</div>
             <img class="group" src="{{ url_for('static', filename='images/group.png') }}" />
             <div class="rectangle"></div>
@@ -45,13 +46,64 @@
         </div>
         <button><img class="frame" src="{{ url_for('static', filename='images/frame-1.png') }}" /></button>
       </div>
-      <!--WE HAVE THIS WORKING
+      WE HAVE THIS WORKING
       <input type="text" name="user_text" placeholder="Enter text" />
       <input type="submit" value="Generate Image" />
       {% if image_url %}
       <img src="{{ image_url }}" alt="Generated Image" />
       {% endif %}
-      -->
+
+      
+    </div>
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/globals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </head>
+  <body>
+    <div class="welcome-page">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="overlap-group">
+            <p class="text-wrapper">Book of Art was created .....</p>
+            <img class="vector" src="{{ url_for('static', filename='images/vector-6.svg') }}" />
+            <img class="img" src="{{ url_for('static', filename='images/vector-4-1.svg') }}" />
+            <img class="vector-2" src="{{ url_for('static', filename='images/vector-5-1.svg') }}" />
+            <img class="vector-3" src="{{ url_for('static', filename='images/vector-7-1.svg') }}" />
+            <img class="vector-4" src="{{ url_for('static', filename='images/vector-8-1.svg') }}" />
+            <div class="div">Welcome!</div>
+            <img class="group" src="{{ url_for('static', filename='images/group-1.png') }}" />
+            <img class="group-2" src="{{ url_for('static', filename='images/group.png') }}" />
+            <img class="frame" src="{{ url_for('static', filename='images/frame-1.png') }}" />
+            <div class="rectangle"></div>
+            <div class="nav-nav-menu">
+              <div class="nav-list-item"><div class="list-item">about</div></div>
+              <div class="list-item-wrapper"><div class="list-item">creators</div></div>
+              <div class="nav-list-item"><div class="list-item">contact</div></div>
+            </div>
+            <div class="group-3">
+              <img class="book-of-art" src="{{ url_for('static', filename='images/book-of-art.png') }}" />
+              <div class="group-4"></div>
+            </div>
+            <img class="hackgt-logo" src="{{ url_for('static', filename='images/hackgt_logo.png') }}" />
+          </div>
+          <div class="overlap-2">
+            <img class="vector-5" src="{{ url_for('static', filename='images/vector-8.svg') }}" /> <img class="vector-6" src="{{ url_for('static', filename='images/vector-7.svg') }}" />
+          </div>
+          <div class="overlap-group-2">
+            <img class="vector-7" src="{{ url_for('static', filename='images/vector-5.svg') }}" />
+            <img class="vector-8" src="{{ url_for('static', filename='images/vector-4.svg') }}" />
+            <img class="vector-9" src="{{ url_for('static', filename='images/vector-3.svg') }}" />
+            <img class="vector-10" src="{{ url_for('static', filename='images/vector-2.svg') }}" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,98 +1,93 @@
 .welcome-page {
-  background-color: #ffffff;
+  background-color: #f1e0d4df;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
-.welcome-page .div {
-  background-color: #ffffff;
-  width: 1512px;
-  height: 982px;
+.welcome-page .overlap-wrapper {
+  background-color: #f1e0d4df;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-page .overlap {
   position: relative;
+  height: 832px;
+}
+
+.welcome-page .overlap-group {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .welcome-page .text-wrapper {
   position: absolute;
-  width: 441px;
-  height: 108px;
-  top: 537px;
-  left: 535px;
-  font-family: "Podkova", Helvetica;
+  width: 30%;
+  height: 25%;
+  top: 60%;
+  left: 35%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 500;
   color: #423127;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   letter-spacing: 0.6px;
   line-height: 10px;
 }
 
-.welcome-page .overlap {
-  position: absolute;
-  width: 506px;
-  height: 336px;
-  top: 646px;
-  left: 1006px;
-  background-image: url(./img/vector-6.svg);
-  background-size: 100% 100%;
-}
-
 .welcome-page .vector {
   position: absolute;
-  width: 434px;
-  height: 282px;
-  top: 54px;
-  left: 72px;
+  width: 30%;
+  height: 40%;
+  bottom: 0px;
+  right: 0px;
 }
 
 .welcome-page .img {
   position: absolute;
-  width: 374px;
-  height: 230px;
-  top: 107px;
-  left: 132px;
-}
-
-.welcome-page .overlap-group {
-  position: absolute;
-  width: 1512px;
-  height: 485px;
-  top: 0;
-  left: 0;
-}
-
-.welcome-page .overlap-2 {
-  position: absolute;
-  width: 1512px;
-  height: 415px;
-  top: 0;
-  left: 0;
+  width: 28%;
+  height: 28%;
+  bottom: 0px;
+  right: 0px;
 }
 
 .welcome-page .vector-2 {
   position: absolute;
-  width: 445px;
-  height: 327px;
-  top: 78px;
-  left: 0;
+  width: 20%;
+  height: 20%;
+  bottom: 0px;
+  right: 0px;
 }
 
 .welcome-page .vector-3 {
   position: absolute;
-  width: 385px;
-  height: 241px;
-  top: 98px;
-  left: 0;
+  width: 30%;
+  height: 50%;
+  top: 0px;
+  left: 0px;
 }
 
-.welcome-page .text-wrapper-2 {
+.welcome-page .vector-4 {
   position: absolute;
-  width: 628px;
-  height: 181px;
-  top: 234px;
-  left: 442px;
-  font-family: "Podkova", Helvetica;
+  width: 25%;
+  height: 45%;
+  top: 0px;
+  left: 0px;
+}
+
+.welcome-page .div {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 700;
   color: #423127;
   font-size: 80px;
@@ -103,23 +98,32 @@
 
 .welcome-page .group {
   position: absolute;
-  width: 78px;
-  height: 107px;
-  top: 275px;
-  left: 968px;
+  width: 66px;
+  height: 91px;
+  top: 30%;
+  left: 67%;
 }
 
 .welcome-page .group-2 {
   position: absolute;
-  width: 78px;
-  height: 107px;
-  top: 275px;
-  left: 469px;
+  width: 66px;
+  height: 91px;
+  top: 30%;
+  left: 28%;
+}
+
+.welcome-page .frame {
+  position: absolute;
+  width: 366px;
+  height: 40px;
+  top: 643px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .welcome-page .rectangle {
   position: absolute;
-  width: 1512px;
+  width: 100%;
   height: 123px;
   top: 0;
   left: 0;
@@ -128,13 +132,13 @@
 
 .welcome-page .nav-nav-menu {
   display: flex;
-  width: 596px;
+  width: 50%;
   height: 35px;
   align-items: flex-start;
   gap: 100px;
   position: absolute;
   top: 45px;
-  left: 883px;
+  left: 60%;
 }
 
 .welcome-page .nav-list-item {
@@ -153,7 +157,7 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Podkova", Helvetica;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 400;
   color: #c9ac9c;
   font-size: 33px;
@@ -173,16 +177,14 @@
   flex: 0 0 auto;
   background-color: #775e50;
   border-radius: 25px;
-  border: 1px solid;
-  border-color: #000000;
 }
 
 .welcome-page .group-3 {
   position: absolute;
-  width: 300px;
-  height: 89px;
-  top: 34px;
-  left: 35px;
+  width: 100%;
+  height: 100%;
+  top: 4%;
+  left: 3%;
 }
 
 .welcome-page .book-of-art {
@@ -203,74 +205,75 @@
   background-size: 100% 100%;
 }
 
-.welcome-page .overlap-group-2 {
+.welcome-page .hackgt-logo {
   position: absolute;
-  width: 138px;
-  height: 125px;
-  top: 360px;
-  left: 1190px;
+  width: 18%;
+  height: 35%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.welcome-page .vector-4 {
+.welcome-page .overlap-2 {
   position: absolute;
-  width: 29px;
-  height: 109px;
-  top: 0;
-  left: 0;
+  width: 147px;
+  height: 149px;
+  top: 497px;
+  left: 184px;
 }
 
 .welcome-page .vector-5 {
   position: absolute;
-  width: 113px;
-  height: 89px;
-  top: 9px;
-  left: 14px;
+  width: 147px;
+  height: 98px;
+  top: 51px;
+  left: 0;
 }
 
 .welcome-page .vector-6 {
   position: absolute;
-  width: 123px;
-  height: 125px;
+  width: 87px;
+  height: 60px;
   top: 0;
-  left: 15px;
+  left: 10px;
+}
+
+.welcome-page .overlap-group-2 {
+  position: absolute;
+  width: 117px;
+  height: 106px;
+  top: 244px;
+  left: 1021px;
 }
 
 .welcome-page .vector-7 {
   position: absolute;
-  width: 27px;
-  height: 25px;
-  top: 20px;
-  left: 42px;
-}
-
-.welcome-page .overlap-3 {
-  position: absolute;
-  width: 174px;
-  height: 176px;
-  top: 674px;
-  left: 196px;
+  width: 25px;
+  height: 92px;
+  top: 43px;
+  left: 55px;
 }
 
 .welcome-page .vector-8 {
   position: absolute;
-  width: 174px;
-  height: 116px;
-  top: 60px;
-  left: 0;
+  width: 96px;
+  height: 75px;
+  top: 50px;
+  left: 75px;
 }
 
 .welcome-page .vector-9 {
   position: absolute;
-  width: 102px;
-  height: 71px;
-  top: 0;
-  left: 12px;
+  width: 104px;
+  height: 106px;
+  top: 40px;
+  left: 80px;
 }
 
-.welcome-page .frame {
+.welcome-page .vector-10 {
   position: absolute;
-  width: 366px;
-  height: 40px;
-  top: 680px;
-  left: 573px;
+  width: 23px;
+  height: 21px;
+  top: 57px;
+  left: 90px;
 }
