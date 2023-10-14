@@ -8,25 +8,12 @@ from nltk.probability import FreqDist
 import string
 
 nltk.download("punkt")
+nltk.download("stopwords")
 
+desired_num = 5
 
 input_paragraph = """
-    Once upon a time in a charming village nestled between emerald forests and crystal-clear streams, there lived a kind-hearted blacksmith named Oliver. Oliver was known throughout the village for his remarkable craftsmanship and the gentle spirit with which he approached his work.
-
-    One sunny morning, a traveling circus arrived in the village, bringing with it a sense of wonder and excitement. People from all around gathered to witness the acrobats, clowns, and exotic animals. Among the circus performers was a captivating, yet melancholic, mime named Isabella. She had a talent for expressing deep emotions through her silent performances, but a heavy sorrow seemed to linger in her eyes.
-
-    As the days passed, Oliver noticed Isabella often sitting alone by the riverbank, lost in her thoughts. His heart went out to her, and he decided to extend an act of kindness. One day, he crafted a delicate silver necklace with a tiny heart-shaped pendant. On it, he engraved the word "Joy" and carefully placed it in a small box.
-
-    That evening, after Isabella's performance, Oliver approached her and, without saying a word, presented the gift. Isabella's eyes widened in surprise, and she held the necklace in her hand, tears glistening in her eyes. She understood that Oliver was offering her a piece of happiness.
-
-    From that day on, Isabella wore the necklace during her performances. Her mime acts transformed as if a weight had been lifted from her heart. She expressed joy, love, and laughter like never before, and the audience could feel the sincerity in her art.
-
-    The village was enchanted by Isabella's performances, and word of her newfound happiness spread far and wide. Visitors came from neighboring villages to see the circus, and the village itself became a place of joy and merriment.
-
-    Oliver and Isabella's friendship grew stronger with each passing day, as they shared their love for the simple joys of life. They found that in the midst of the circus and the blacksmith's forge, they had discovered something more precious than silver or gold: they had found the joy of kindness and the beauty of friendship.
-
-    And so, in that quaint village, amidst laughter and applause, Oliver and Isabella's story became a testament to the transformative power of a simple act of kindness, reminding everyone that in sharing joy, we often find the truest and most beautiful treasures in life.
-
+    Hello Kitty once went to shop. She found a cat. Hello Kitty killed the cat. Then she ran away from teh cops and hide in a sewer. Hello Kitty died of starvation
     """
 
 # Tokenize the paragraph into sentences
@@ -80,7 +67,7 @@ def get_keywords():
 
     # Get the most common words as keywords
     keywords = [
-        word for word, freq in fdist.most_common(5)
+        word for word, freq in fdist.most_common(desired_num)
     ]  # You can change 5 to any desired number of keywords
 
     keywords_string = ""
