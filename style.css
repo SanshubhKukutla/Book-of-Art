@@ -1,0 +1,276 @@
+.welcome-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.welcome-page .div {
+  background-color: #ffffff;
+  width: 1512px;
+  height: 982px;
+  position: relative;
+}
+
+.welcome-page .text-wrapper {
+  position: absolute;
+  width: 441px;
+  height: 108px;
+  top: 537px;
+  left: 535px;
+  font-family: "Podkova", Helvetica;
+  font-weight: 500;
+  color: #423127;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  line-height: 10px;
+}
+
+.welcome-page .overlap {
+  position: absolute;
+  width: 506px;
+  height: 336px;
+  top: 646px;
+  left: 1006px;
+  background-image: url(./img/vector-6.svg);
+  background-size: 100% 100%;
+}
+
+.welcome-page .vector {
+  position: absolute;
+  width: 434px;
+  height: 282px;
+  top: 54px;
+  left: 72px;
+}
+
+.welcome-page .img {
+  position: absolute;
+  width: 374px;
+  height: 230px;
+  top: 107px;
+  left: 132px;
+}
+
+.welcome-page .overlap-group {
+  position: absolute;
+  width: 1512px;
+  height: 485px;
+  top: 0;
+  left: 0;
+}
+
+.welcome-page .overlap-2 {
+  position: absolute;
+  width: 1512px;
+  height: 415px;
+  top: 0;
+  left: 0;
+}
+
+.welcome-page .vector-2 {
+  position: absolute;
+  width: 445px;
+  height: 327px;
+  top: 78px;
+  left: 0;
+}
+
+.welcome-page .vector-3 {
+  position: absolute;
+  width: 385px;
+  height: 241px;
+  top: 98px;
+  left: 0;
+}
+
+.welcome-page .text-wrapper-2 {
+  position: absolute;
+  width: 628px;
+  height: 181px;
+  top: 234px;
+  left: 442px;
+  font-family: "Podkova", Helvetica;
+  font-weight: 700;
+  color: #423127;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  line-height: 10px;
+}
+
+.welcome-page .group {
+  position: absolute;
+  width: 78px;
+  height: 107px;
+  top: 275px;
+  left: 968px;
+}
+
+.welcome-page .group-2 {
+  position: absolute;
+  width: 78px;
+  height: 107px;
+  top: 275px;
+  left: 469px;
+}
+
+.welcome-page .rectangle {
+  position: absolute;
+  width: 1512px;
+  height: 123px;
+  top: 0;
+  left: 0;
+  background-color: #433128;
+}
+
+.welcome-page .nav-nav-menu {
+  display: flex;
+  width: 596px;
+  height: 35px;
+  align-items: flex-start;
+  gap: 100px;
+  position: absolute;
+  top: 45px;
+  left: 883px;
+}
+
+.welcome-page .nav-list-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #775e50;
+  border-radius: 25px;
+}
+
+.welcome-page .list-item {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Podkova", Helvetica;
+  font-weight: 400;
+  color: #c9ac9c;
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 0.66px;
+  line-height: 10px;
+  white-space: nowrap;
+}
+
+.welcome-page .list-item-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #775e50;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.welcome-page .group-3 {
+  position: absolute;
+  width: 300px;
+  height: 89px;
+  top: 34px;
+  left: 35px;
+}
+
+.welcome-page .book-of-art {
+  position: absolute;
+  width: 182px;
+  height: 52px;
+  top: 3px;
+  left: 2px;
+}
+
+.welcome-page .group-4 {
+  position: absolute;
+  width: 56px;
+  height: 53px;
+  top: 0;
+  left: 208px;
+  background-image: url(./img/vector.png);
+  background-size: 100% 100%;
+}
+
+.welcome-page .overlap-group-2 {
+  position: absolute;
+  width: 138px;
+  height: 125px;
+  top: 360px;
+  left: 1190px;
+}
+
+.welcome-page .vector-4 {
+  position: absolute;
+  width: 29px;
+  height: 109px;
+  top: 0;
+  left: 0;
+}
+
+.welcome-page .vector-5 {
+  position: absolute;
+  width: 113px;
+  height: 89px;
+  top: 9px;
+  left: 14px;
+}
+
+.welcome-page .vector-6 {
+  position: absolute;
+  width: 123px;
+  height: 125px;
+  top: 0;
+  left: 15px;
+}
+
+.welcome-page .vector-7 {
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  top: 20px;
+  left: 42px;
+}
+
+.welcome-page .overlap-3 {
+  position: absolute;
+  width: 174px;
+  height: 176px;
+  top: 674px;
+  left: 196px;
+}
+
+.welcome-page .vector-8 {
+  position: absolute;
+  width: 174px;
+  height: 116px;
+  top: 60px;
+  left: 0;
+}
+
+.welcome-page .vector-9 {
+  position: absolute;
+  width: 102px;
+  height: 71px;
+  top: 0;
+  left: 12px;
+}
+
+.welcome-page .frame {
+  position: absolute;
+  width: 366px;
+  height: 40px;
+  top: 680px;
+  left: 573px;
+}
