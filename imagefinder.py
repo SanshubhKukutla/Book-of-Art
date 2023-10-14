@@ -1,5 +1,3 @@
-AIzaSyBrWFYAQsLica1GXPmxUudAsODPCupiHZ8
-
 import requests
 
 api_key = "AIzaSyBrWFYAQsLica1GXPmxUudAsODPCupiHZ8"
