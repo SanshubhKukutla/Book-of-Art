@@ -16,20 +16,21 @@
     </style>
   </head>
   <body>
-    <h1>Enter Text to Generate Image</h1>
+    <h1>Enter Text to Generate Images</h1>
     <form method="POST">
       <input type="text" name="user_text[]" placeholder="Enter Beginning" />
       <input type="text" name="user_text[]" placeholder="Enter Middle" />
       <input type="text" name="user_text[]" placeholder="Enter End" />
-      <div class="Image2"></div>
-      <input type="submit" value="Generate Image" />
+      <input type="submit" value="Generate Images" />
     </form>
-    {% if image_urls %}
+
+    <!-- Display the generated images with CSS styles -->
+    {% if image_urls %} {% for image_set in image_urls %}
     <div class="image-container">
-      {% for image_url in image_urls %}
+      {% for image_url in image_set %}
       <img src="{{ image_url }}" alt="Generated Image" />
       {% endfor %}
     </div>
-    {% endif %}
+    {% endfor %} {% endif %}
   </body>
 </html>

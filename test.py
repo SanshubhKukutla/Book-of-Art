@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -18,12 +18,12 @@ def generate_image():
             image_url = generate_image_with_text(text)
             img_urls.append(image_url)
         print(img_urls)
-        return render_template("index.html", image_urls=img_urls)
+        return render_template("appTest.html", image_urls=img_urls)
 
-    return render_template("index.html")
+    return render_template("appTest.html")
 
 
-def generate_image_with_text(text):
+def generate_image_with_text(text, num_images=3):
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt="Make a story from this text:\n" + text,
@@ -31,13 +31,15 @@ def generate_image_with_text(text):
     )
 
     story = response.choices[0].text
+    print(story)
+    image_urls = []
 
-    # Create a blank image
-    image_response = openai.Image.create(prompt=story, n=1, size="512x512")
+    # Generate images for the story
+    for _ in range(num_images):
+        image_response = openai.Image.create(prompt=story, n=1, size="256x256")
+        image_urls.append(image_response["data"][0]["url"])
 
-    image_url = image_response.data[0].url
-    # Return the image URL
-    return image_url
+    return image_urls
 
 
 if __name__ == "__main__":
