@@ -1,3 +1,4 @@
+
 .welcome-page {
   background-color: #f1e0d4df;
   display: flex;
@@ -16,12 +17,20 @@
   position: relative;
   height: 832px;
 }
+nav {
+  background-color: #433128; /* Background color for the navigation bar */
+  text-align: center; /* Center the buttons horizontally */
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: 100;
+  position: relative;
+}
 
 .welcome-page .overlap-group {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: -90px;
   left: 0;
 }
 
@@ -37,7 +46,8 @@
   font-size: 25px;
   text-align: center;
   letter-spacing: 0.6px;
-  line-height: 10px;
+  line-height: 25px;
+  
 }
 
 .welcome-page .vector {
@@ -78,6 +88,7 @@
   height: 45%;
   top: 0px;
   left: 0px;
+  float: left;
 }
 
 .welcome-page .div {
@@ -116,93 +127,18 @@
   position: absolute;
   width: 366px;
   height: 40px;
-  top: 643px;
-  left: 50%;
+  top: 0;
+  left: 0;
   transform: translate(-50%, 0%);
 }
 
-.welcome-page .rectangle {
-  position: absolute;
-  width: 100%;
-  height: 123px;
-  top: 0;
-  left: 0;
-  background-color: #433128;
-}
-
-.welcome-page .nav-nav-menu {
-  display: flex;
-  width: 50%;
-  height: 35px;
-  align-items: flex-start;
-  gap: 100px;
-  position: absolute;
-  top: 45px;
-  left: 60%;
-}
-
-.welcome-page .nav-list-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #775e50;
-  border-radius: 25px;
-}
-
-.welcome-page .list-item {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 400;
-  color: #c9ac9c;
-  font-size: 33px;
-  text-align: center;
-  letter-spacing: 0.66px;
-  line-height: 10px;
-  white-space: nowrap;
-}
-
-.welcome-page .list-item-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #775e50;
-  border-radius: 25px;
-}
 
 .welcome-page .group-3 {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 4%;
-  left: 3%;
-}
-
-.welcome-page .book-of-art {
-  position: absolute;
-  width: 182px;
-  height: 52px;
-  top: 3px;
-  left: 2px;
-}
-
-.welcome-page .group-4 {
-  position: absolute;
-  width: 56px;
-  height: 53px;
-  top: 0;
-  left: 208px;
-  background-image: url('/static/images/vector.png');
-  background-size: 100% 100%;  
+  top: 0px;
+  left: 0px;
 }
 
 .welcome-page .hackgt-logo {
@@ -286,7 +222,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .button {
@@ -304,3 +239,47 @@
 .button:hover {
   background-color: #9A7966; /* Change the hover color */
 }
+
+
+ul {
+  list-style: none; /* Remove bullets from the navigation list */
+  padding: 0%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add spacing between navigation items */
+  margin-top: 20%;
+
+}
+
+a2 {
+  color: #433128; /* Text color for navigation links */
+  text-decoration: none; /* Remove underlines from links */
+  text-align: center;
+  padding: 10px 20px; /* Add padding to create button-like appearance */
+  border: 1px solid #C9AC9C; /* Add border to the buttons */
+  border-radius: 20px; /* Round the corners */
+  background-color: #C9AC9C; /* Background color for the buttons */
+  cursor: pointer;
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a2:hover {
+  background-color: #775E50; /* Change the background color on hover */
+  color: #C9AC9C
+}
+
+a3 {
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  padding-top: 0px;
+  float: left;
+  background-color: #433128;
+  cursor: pointer;
+}
+

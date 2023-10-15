@@ -6,11 +6,21 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </head>
   <body>
+    <nav>
+      <ul>
+          <li><a3 href="/">
+          <img src="{{ url_for('static', filename='images/book-of-art.png') }}" alt="Book of Art"></li>
+          <li><a3 href="/">
+            <img src="{{ url_for('static', filename='images/vector.png') }}" alt="Book of Art"></li>
+          <li><a2 href="/about">About</a2></li>
+          <li><a2 href="/creators">Creators</a2></li>
+      </ul>
+  </nav>
     <div class="welcome-page">
       <div class="overlap-wrapper">
         <div class="overlap">
           <div class="overlap-group">
-            <p class="text-wrapper">Book of Art was created .....</p>
+            <p class="text-wrapper">Book of Art: Your story, beautifully illustrated.</p>
             <img class="vector" src="{{ url_for('static', filename='images/vector-6.svg') }}" />
             <img class="img" src="{{ url_for('static', filename='images/vector-4-1.svg') }}" />
             <img class="vector-2" src="{{ url_for('static', filename='images/vector-5-1.svg') }}" />
@@ -21,16 +31,7 @@
               <img class="group" src="{{ url_for('static', filename='images/group-1.png') }}" />
             </a>
             <img class="group-2" src="{{ url_for('static', filename='images/group.png') }}" />      
-            <div class="rectangle"></div>
-            <div class="nav-nav-menu">
-              <div id="clickablePrintConsole" class="nav-list-item"><div class="list-item">about</div></div>
-              <div class="list-item-wrapper"><div class="list-item">creators</div></div>
-              <div class="nav-list-item"><div class="list-item">contact</div></div>
-            </div>
-            <div class="group-3">
-              <img class="book-of-art" src="{{ url_for('static', filename='images/book-of-art.png') }}" />
-              <div class="group-4"></div>
-            </div>
+            
             <img class="hackgt-logo" src="{{ url_for('static', filename='images/hackgt_logo.png') }}" />
           </div>
           <div class="overlap-2">
