@@ -217,7 +217,8 @@ nav {
 .BUTTON-TO-MOVE-ON {
   position: absolute;
   top: 69%;
-  left: 555px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1; /* Ensure it's on top of other elements */
   display: flex;
   justify-content: center;
