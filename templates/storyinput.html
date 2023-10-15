@@ -51,8 +51,7 @@
         background-color: #9A7966;
         color: #433128;
       }
-
-      .styled-input{
+      .styled-input {
         width: 150px;
         height: 50px;
         padding: 20px; /* Add some padding for spacing */
@@ -60,18 +59,31 @@
         border-radius: 5px; /* Round the corners */
         font-size: 16px; /* Set the font size */
         flex-wrap: wrap;
+        position: relative; /* Add this line */
       }
+
       .styled-input:focus {
         border: 2px solid #3588bb;
       }
+
       .styled-input:hover {
         border: 2px solid #9A7966;
       }
-      .styled-input::placeholder{
+
+      .styled-input::placeholder {
         color: #847165;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 16px;
         font-style: italic;
+        position: absolute; /* Add this line */
+        top: 5px; /* Adjust the top value to position the placeholder as desired */
+        left: 10px; /* Adjust the left value to position the placeholder as desired */
+        transition: top 0.2s, font-size 0.2s, color 0.2s; /* Add this line for smooth transition */
+      }
+
+      .styled-input:focus::placeholder {
+        top: -20px; /* Adjust the top value to move the placeholder up */
+        font-size: 14px; /* Adjust the font size when focused */
       }
       input {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
