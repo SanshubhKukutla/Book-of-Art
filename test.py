@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 import openai
 
 openai.api_key = "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"
@@ -7,12 +7,15 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def generate_image():
-    img_urls = []
-
     if request.method == "POST":
         # Get user input from the form
         user_texts = request.form.getlist("user_text[]")
         print(user_texts)
+        
+        # Redirect to the loading screen while generating images
+        return render_template("loadingscreen.html")
+
+        img_urls = []
         for text in user_texts:
             image_url = generate_image_with_text(text)
             img_urls.append(image_url)
@@ -21,25 +24,7 @@ def generate_image():
 
     return render_template("storyinput.html")
 
-
-def generate_image_with_text(text, num_images=3):
-    response = openai.Completion.create(
-        engine="text-davinci-002",
-        prompt="Make a story from this text:\n" + text,
-        max_tokens=250,  # Adjust the number of tokens for your desired summary length
-    )
-
-    story = response.choices[0].text
-    print(story)
-    image_urls = []
-
-    # Generate images for the story
-    for _ in range(num_images):
-        image_response = openai.Image.create(prompt="Generate a whimsical image based on the following context:" + story, n=1, size="256x256")
-        image_urls.append(image_response["data"][0]["url"])
-
-    return image_urls
-
+# ... your generate_image_with_text function and if __name__ block remain the same ...
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
