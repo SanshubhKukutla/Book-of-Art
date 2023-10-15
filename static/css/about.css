@@ -37,7 +37,7 @@
     position: absolute;
     width: 55%;
     height: 35%;
-    top: 53%;
+    top: 47%;
     left: 23%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
@@ -94,7 +94,7 @@
     position: absolute;
     width: 100%;
     height: 30%;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -110,7 +110,7 @@
     position: absolute;
     width: 30%;
     height: 20%;
-    top: 25%;
+    top: 20%;
     left: 35%;
   }
   
