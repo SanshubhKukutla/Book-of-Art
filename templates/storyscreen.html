@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Text to Image</title>
+    <title>Your Storybook</title>
     <style>
       /* CSS for styling images */
       img {
@@ -9,22 +9,33 @@
         border: 2px solid #333; /* Add a border to the images */
       }
       /* CSS for the image container */
+      .body-container {
+        text-align: center; /* Center-align the container content */
+        margin-top: 25px;
+      }
       .image-container {
         display: flex; /* Display images in a row */
         flex-wrap: wrap; /* Wrap images to the next line if there's not enough space */
+        justify-content: center; /* Center-align images horizontally */
+      }
+      .caption {
+        font-weight: bold;
+        margin: 10px; 
       }
     </style>
   </head>
   <body>
-    <p>test</p>
-    {% if image_urls %}
-      {% for image_set in image_urls %}
-        <div class="image-container">
-          {% for image_url in image_set %}
-            <img src="{{ image_url }}" alt="Generated Image" />
-          {% endfor %}
-        </div>
-      {% endfor %}
-    {% endif %}
+    <div class="body-container">
+      {% if image_urls %}
+        {% for image_set in image_urls %}
+          <div class="image-container">
+              {% for image_url in image_set %}
+                <img src="{{ image_url }}" alt="Generated Image" />
+              {% endfor %}
+          </div>
+          <p class="caption">{{ captions[loop.index0] }}</p>
+        {% endfor %}
+      {% endif %}
+    </div>
   </body>
 </html>

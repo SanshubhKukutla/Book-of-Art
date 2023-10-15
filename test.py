@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -17,7 +17,7 @@ def generate_image():
             image_url = generate_image_with_text(text)
             img_urls.append(image_url)
         print(img_urls)
-        return render_template("storyscreen.html", image_urls=img_urls)
+        return render_template("storyscreen.html", image_urls=img_urls, captions=user_texts)
 
     return render_template("storyinput.html")
 
@@ -35,7 +35,7 @@ def generate_image_with_text(text, num_images=3):
 
     # Generate images for the story
     for _ in range(num_images):
-        image_response = openai.Image.create(prompt=story, n=1, size="256x256")
+        image_response = openai.Image.create(prompt="Generate a whimsical image based on the following context:" + story, n=1, size="256x256")
         image_urls.append(image_response["data"][0]["url"])
 
     return image_urls
