@@ -255,7 +255,7 @@ li {
 
 }
 
-a2 {
+#SPECIAL-ABOUT{
   color: #433128; /* Text color for navigation links */
   text-decoration: none; /* Remove underlines from links */
   text-align: center;
@@ -269,7 +269,7 @@ a2 {
   margin-right: 20px;
 }
 
-a2:hover {
+#SPECIAL-ABOUT:hover {
   background-color: #775E50; /* Change the background color on hover */
   color: #C9AC9C
 }
