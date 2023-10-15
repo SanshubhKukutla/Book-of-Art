@@ -1,12 +1,8 @@
 from flask import Flask, request, render_template
 import openai
 
-<<<<<<< Updated upstream
-openai.api_key = "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"
-=======
 openai.api_key = "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"
 
->>>>>>> Stashed changes
 
 app = Flask(__name__)
 
