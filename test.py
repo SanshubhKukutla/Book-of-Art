@@ -1,10 +1,9 @@
 from flask import Flask, request, render_template
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
-
 
 @app.route("/", methods=["GET", "POST"])
 def generate_image():
@@ -18,9 +17,9 @@ def generate_image():
             image_url = generate_image_with_text(text)
             img_urls.append(image_url)
         print(img_urls)
-        return render_template("appTest.html", image_urls=img_urls)
+        return render_template("storyscreen.html", image_urls=img_urls)
 
-    return render_template("appTest.html")
+    return render_template("storyinput.html")
 
 
 def generate_image_with_text(text, num_images=3):

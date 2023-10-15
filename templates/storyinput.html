@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text to Image</title>
+    <style>
+      /* CSS for styling images */
+      img {
+        margin: 10px; /* Add spacing around each image */
+        border: 2px solid #333; /* Add a border to the images */
+      }
+      /* CSS for the image container */
+      .image-container {
+        display: flex; /* Display images in a row */
+        flex-wrap: wrap; /* Wrap images to the next line if there's not enough space */
+      }
+      .storyinputbody {
+        text-align: center;
+      }
+      #storybutton {
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "storyinputbody">
+      <h1>Enter Text to Generate Images</h1>
+      <p>In each text field, enter a section of your story. For example, in the first text field, insert the setting. In the last, enter the falling action.</p>
+      <form method="POST">
+        <input type="text" name="user_text[]" placeholder="Enter Beginning" />
+        <input type="text" name="user_text[]" placeholder="Enter Middle" />
+        <input type="text" name="user_text[]" placeholder="Enter End" />
+        <br>
+        <input id="storybutton" type="submit" value="Create your story!" />
+      </form>  
+    </div>  
+  </body>
+</html>

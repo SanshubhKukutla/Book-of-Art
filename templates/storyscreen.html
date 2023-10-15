@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text to Image</title>
+    <style>
+      /* CSS for styling images */
+      img {
+        margin: 10px; /* Add spacing around each image */
+        border: 2px solid #333; /* Add a border to the images */
+      }
+      /* CSS for the image container */
+      .image-container {
+        display: flex; /* Display images in a row */
+        flex-wrap: wrap; /* Wrap images to the next line if there's not enough space */
+      }
+    </style>
+  </head>
+  <body>
+    <p>test</p>
+    {% if image_urls %}
+      {% for image_set in image_urls %}
+        <div class="image-container">
+          {% for image_url in image_set %}
+            <img src="{{ image_url }}" alt="Generated Image" />
+          {% endfor %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>
