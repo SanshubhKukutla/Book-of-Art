@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -27,8 +27,6 @@ def generate_image():
         user_texts = request.form.getlist("user_text[]")
         combined_prompt = ""
         
-
-        # Redirect to the loading screen while generating images
         for text in user_texts:
             if text.strip():
                 combined_prompt += text + ". "
@@ -61,4 +59,3 @@ def generate_image_with_text(text, num_images=3):
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
-
