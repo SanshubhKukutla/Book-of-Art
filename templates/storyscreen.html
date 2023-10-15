@@ -6,13 +6,16 @@
       /* CSS for styling images */
 
       img {
-        margin: 20px; /* Add spacing around each image */
+        margin: 10px; /* Add spacing around each image */
         border: 2px solid #333; /* Add a border to the images */
       }
       /* CSS for the image container */
       .body-container {
         text-align: center; /* Center-align the container content */
-        margin-top: 50px;
+        position: absolute;
+        left: 50%; /* Move the left edge of the container to the horizontal center */
+        top: 25%; /* Move the container down by 40 pixels */
+        transform: translate(-50%, 0); /* Center horizontally and keep the top margin */
       }
       body {
         background-color: #f1e0d4df;
