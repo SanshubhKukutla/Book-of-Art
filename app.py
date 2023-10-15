@@ -10,6 +10,14 @@ def hello_world():
     message = "Hello, Flask! This message is displayed in the browser."
     return render_template('index.html', message=message)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/creators')
+def creators():
+    return render_template('creators.html')
+
 @app.route("/generate_image", methods=["GET", "POST"])
 def generate_image():
     img_urls = []
