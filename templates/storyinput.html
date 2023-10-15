@@ -6,19 +6,73 @@
       /* CSS for styling images */
       img {
         margin: 10px; /* Add spacing around each image */
-        border: 2px solid #333; /* Add a border to the images */
+        border: 2px solid #433128; /* Add a border to the images */
       }
       /* CSS for the image container */
       .image-container {
         display: flex; /* Display images in a row */
         flex-wrap: wrap; /* Wrap images to the next line if there's not enough space */
+        background-color: #f1e0d4df;
+      }
+      body {
+        background-color: #f1e0d4df;
+        background-size: cover;
       }
       .storyinputbody {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        margin: 200px;
+      }
+      p {
+        font-size: large;
+        margin-bottom: 30px;
       }
       #storybutton {
-        margin-top: 20px;
+        margin-top: 30px;
+        background-color: #433128;
+        color: #C9AC9C;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer
       }
+      #storybutton:hover{
+        background-color: #9A7966;
+        color: #433128;
+      }
+
+      .styled-input{
+        width: 150px;
+        height: 50px;
+        padding: 20px; /* Add some padding for spacing */
+        border: 2px dashed #9A7966; /* Add a border */
+        border-radius: 5px; /* Round the corners */
+        font-size: 16px; /* Set the font size */
+      }
+      .styled-input:focus {
+        border: 2px solid #3588bb;
+      }
+      .styled-input:hover {
+        border: 2px solid #9A7966;
+      }
+      .styled-input::placeholder{
+        color: #847165;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        font-style: italic;
+      }
+      input {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+        
+
     </style>
   </head>
   <body>
@@ -26,11 +80,11 @@
       <h1>Enter Text to Generate Images</h1>
       <p>In each text field, enter a section of your story.</p>
       <form method="POST">
-        <input type="text" name="user_text[]" placeholder="Introduction/Setting" />
-        <input type="text" name="user_text[]" placeholder="Rising Action" />
-        <input type="text" name="user_text[]" placeholder="Climax" />
-        <input type="text" name="user_text[]" placeholder="Falling Action" />
-        <input type="text" name="user_text[]" placeholder="Conclusion" />
+        <input type="text" name="user_text[]" placeholder="Introduction/Setting" class="styled-input"/>
+        <input type="text" name="user_text[]" placeholder="Rising Action" class="styled-input"/>
+        <input type="text" name="user_text[]" placeholder="Climax" class="styled-input"/>
+        <input type="text" name="user_text[]" placeholder="Falling Action" class="styled-input"/>
+        <input type="text" name="user_text[]" placeholder="Conclusion" class="styled-input"/>
         <br>
         <input id="storybutton" type="submit" value="Create your story!" />
       </form>  
