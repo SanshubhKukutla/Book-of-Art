@@ -1,178 +1,103 @@
-.about {
-    background-color: #f1e0d4;
+
+.welcome-page {
+    background-color: #f1e0d4df;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
   
-  .about .div {
-    background-color: #f1e0d4;
-    width: 1440px;
-    height: 1024px;
+  .welcome-page .overlap-wrapper {
+    background-color: #f1e0d4df;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .welcome-page .overlap {
+    position: relative;
+    height: 832px;
+  }
+  nav {
+    background-color: #433128;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    z-index: 100;
     position: relative;
   }
-  
-  .about .overlap {
+  .welcome-page .overlap-group {
     position: absolute;
-    width: 500px;
-    height: 352px;
-    top: 672px;
-    left: 940px;
-    background-image: url(./img/vector-6.svg);
-    background-size: 100% 100%;
-  }
-  
-  .about .vector {
-    position: absolute;
-    width: 428px;
-    height: 298px;
-    top: 54px;
-    left: 72px;
-  }
-  
-  .about .img {
-    position: absolute;
-    width: 368px;
-    height: 244px;
-    top: 107px;
-    left: 132px;
-  }
-  
-  .about .overlap-group {
-    position: absolute;
-    width: 1440px;
-    height: 428px;
-    top: -7px;
+    width: 100%;
+    height: 100%;
+    top: -90px;
     left: 0;
   }
-  
-  .about .vector-2 {
+
+  .welcome-page .text-wrapper {
     position: absolute;
-    width: 444px;
-    height: 327px;
-    top: 94px;
-    left: 0;
-  }
-  
-  .about .vector-3 {
-    position: absolute;
-    width: 384px;
-    height: 241px;
-    top: 114px;
-    left: 0;
-  }
-  
-  .about .rectangle {
-    position: absolute;
-    width: 1440px;
-    height: 140px;
-    top: 0;
-    left: 0;
-    background-color: #423127;
-  }
-  
-  .about .nav-nav-menu {
-    display: flex;
-    width: 596px;
-    height: 35px;
-    align-items: flex-start;
-    gap: 100px;
-    position: absolute;
-    top: 50px;
-    left: 803px;
-  }
-  
-  .about .nav-list-item {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #775e50;
-    border-radius: 25px;
-  }
-  
-  .about .list-item {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    color: #c9ac9c;
-    font-size: 33px;
-    text-align: center;
-    letter-spacing: 0.66px;
-    line-height: 10px;
-    white-space: nowrap;
-  }
-  
-  .about .list-item-wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #775e50;
-    border-radius: 25px;
-    border: 1px solid;
-    border-color: #000000;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .about .nav-list-item-2 {
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .about .group {
-    position: absolute;
-    width: 300px;
-    height: 89px;
-    top: 41px;
-    left: 35px;
-  }
-  
-  .about .book-of-art {
-    position: absolute;
-    width: 182px;
-    height: 52px;
-    top: 3px;
-    left: 2px;
-  }
-  
-  .about .group-2 {
-    position: absolute;
-    width: 56px;
-    height: 53px;
-    top: 0;
-    left: 208px;
-  }
-  
-  .about .text-wrapper {
-    position: absolute;
-    width: 613px;
-    top: 420px;
-    left: 216px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 55%;
+    height: 35%;
+    top: 53%;
+    left: 23%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     color: #423127;
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
     letter-spacing: 0.6px;
-    line-height: 10px;
-    white-space: nowrap;
+    line-height: 25px;
+    
   }
   
-  .about .text-wrapper-2 {
+  .welcome-page .vector {
     position: absolute;
-    width: 593px;
-    height: 186px;
-    top: 196px;
-    left: 423px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 30%;
+    height: 40%;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .welcome-page .img {
+    position: absolute;
+    width: 28%;
+    height: 28%;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .welcome-page .vector-2 {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .welcome-page .vector-3 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .welcome-page .vector-4 {
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    top: 0px;
+    left: 0px;
+    float: left;
+  }
+  
+  .welcome-page .div {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     color: #423127;
     font-size: 80px;
@@ -181,11 +106,43 @@
     line-height: 10px;
   }
   
-  .about .group-3 {
+  .welcome-page .group {
     position: absolute;
-    width: 419px;
-    height: 180px;
-    top: 197px;
-    left: 509px;
+    width: 30%;
+    height: 20%;
+    top: 25%;
+    left: 35%;
   }
   
+  .welcome-page .hackgt-logo {
+    position: absolute;
+    width: 200%;
+    height: 35%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .welcome-page .overlap-2 {
+    position: absolute;
+    width: 147px;
+    height: 149px;
+    top: 497px;
+    left: 184px;
+  }
+  
+  a img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio for responsive design */
+    border: 0px;
+    float: right;
+    margin: 0px;
+  }
+    
+  a {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Maintain aspect ratio for responsive design */
+    border: 0px;
+    float: right;
+    margin-top: 0px;
+  }

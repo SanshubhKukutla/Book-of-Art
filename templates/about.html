@@ -1,34 +1,36 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/globals.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </head>
   <body>
-    <div class="about">
-      <div class="div">
+    <nav>
+      <a href="/">
+            <img src="{{ url_for('static', filename='images/hackgt_logo.png') }}" alt="Your Logo">
+      </a>
+  </nav>
+    <div class="welcome-page">
+      <div class="overlap-wrapper">
         <div class="overlap">
-          <img class="vector" src="{{ url_for('static', filename='images/vector-4-1.svg') }}" /> 
-          <img class="img" src="{{ url_for('static', filename='images/vector-5-1.svg') }}" />
-        </div>
-        <div class="overlap-group">
-          <img class="vector-2" src="{{ url_for('static', filename='images/vector-7-1.svg') }}" />
-          <img class="vector-3" src="{{ url_for('static', filename='images/vector-8-1.svg') }}" />
-          <div class="rectangle"></div>
-          <div class="nav-nav-menu">
-            <div class="nav-list-item"><div class="list-item">about</div></div>
-            <div class="list-item-wrapper"><div class="list-item">creators</div></div>
-            <img class="nav-list-item-2" src="{{ url_for('static', filename='images/nav-list-item.svg') }}" />
+          <div class="overlap-group">
+            <p class="text-wrapper">The inspiration behind "Book of Art" came from our shared love for storytelling and visual arts.
+               As a group, we aimed to create a platform that utilizes AI to convert text prompts into personalized, captivating picture 
+               books. We are passionate about making creativity and self-expression accessible to all, regardless of one's writing 
+               experience. Our collective vision is to blend literature and visual art, crafting unique stories that bridge the gap between 
+               words and imagery, and inspire creativity through a visually engaging medium.</p>
+            <img class="vector" src="{{ url_for('static', filename='images/vector-6.svg') }}" />
+            <img class="img" src="{{ url_for('static', filename='images/vector-4-1.svg') }}" />
+            <img class="vector-2" src="{{ url_for('static', filename='images/vector-5-1.svg') }}" />
+            <img class="vector-3" src="{{ url_for('static', filename='images/vector-7-1.svg') }}" />
+            <img class="vector-4" src="{{ url_for('static', filename='images/vector-8-1.svg') }}" />
+            <div class="div">About</div>
+            <img class="group" src="{{ url_for('static', filename='images/group-3.png') }}" />
           </div>
-          <div class="group">
-            <img class="book-of-art" src="{{ url_for('static', filename='images/vector-2.png') }}" /> 
-            <img class="group-2" src="{{ url_for('static', filename='images/vector.png') }}" />
-          </div>
-          <p class="text-wrapper">Created on Friday, October 13 of 2023, this .......</p>
-          <div class="text-wrapper-2">About</div>
-          <img class="group-3" src="{{ url_for('static', filename='images/group-2.png') }}" />
-        </div>
-      </div>
+        </div> 
+      </div>  
     </div>
   </body>
 </html>
