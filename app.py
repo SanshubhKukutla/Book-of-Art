@@ -27,8 +27,9 @@ def generate_image():
         user_texts = request.form.getlist("user_text[]")
         print(user_texts)
         for text in user_texts:
-            image_url = generate_image_with_text(text)
-            img_urls.append(image_url)
+            if text.strip():
+                image_url = generate_image_with_text(text)
+                img_urls.append(image_url)
         print(img_urls)
         return render_template("storyscreen.html", image_urls=img_urls)
 
