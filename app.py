@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -26,12 +26,14 @@ def generate_image():
         # Get user input from the form
         user_texts = request.form.getlist("user_text[]")
         print(user_texts)
+
+        # Redirect to the loading screen while generating images
         for text in user_texts:
             if text.strip():
                 image_url = generate_image_with_text(text)
                 img_urls.append(image_url)
         print(img_urls)
-        return render_template("storyscreen.html", image_urls=img_urls)
+        return render_template("storyscreen.html", image_urls=img_urls, captions = user_texts)
 
     return render_template("storyinput.html")
 
