@@ -55,7 +55,7 @@ def generate_image_with_text(text, num_images=3):
 
     # Generate images for the story
     for _ in range(num_images):
-        image_response = openai.Image.create(prompt=story, n=1, size="256x256")
+        image_response = openai.Image.create(prompt="Generate a whimsical image from this context: \n" + story, n=1, size="256x256")
         image_urls.append(image_response["data"][0]["url"])
 
     return image_urls
