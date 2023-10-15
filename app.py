@@ -25,14 +25,14 @@ def generate_image():
     if request.method == "POST":
         # Get user input from the form
         user_texts = request.form.getlist("user_text[]")
-        print(user_texts)
+        
 
         # Redirect to the loading screen while generating images
         for text in user_texts:
             if text.strip():
                 image_url = generate_image_with_text(text)
                 img_urls.append(image_url)
-        print(img_urls)
+        
         return render_template("storyscreen.html", image_urls=img_urls, captions = user_texts)
 
     return render_template("storyinput.html")
@@ -46,7 +46,7 @@ def generate_image_with_text(text, num_images=3):
     )
 
     story = response.choices[0].text
-    print(story)
+    
     image_urls = []
 
     # Generate images for the story
