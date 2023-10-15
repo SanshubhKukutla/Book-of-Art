@@ -3,10 +3,6 @@ import openai
 
 openai.api_key = "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"
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7fff2ad4108e0b02ac00a4baef403ffbb6886eff
 app = Flask(__name__)
 
 @app.route('/')
