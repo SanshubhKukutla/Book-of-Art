@@ -17,13 +17,15 @@
             <img class="vector-3" src="{{ url_for('static', filename='images/vector-7-1.svg') }}" />
             <img class="vector-4" src="{{ url_for('static', filename='images/vector-8-1.svg') }}" />
             <div class="div">Welcome!</div>
-            <img class="group" src="{{ url_for('static', filename='images/group-1.png') }}" />
+            <a href="/about">
+              <img class="group" src="{{ url_for('static', filename='images/group-1.png') }}" />
+            </a>
             <img class="group-2" src="{{ url_for('static', filename='images/group.png') }}" />
             <div class="frame">
-              <a href="/generate_image"> 
+              <a href="/next_page.html">
                 <img class="frame-1" src="{{ url_for('static', filename='images/frame-1.png') }}" />
               </a>
-            </div>
+            </div>            
             <div class="rectangle"></div>
             <div class="nav-nav-menu">
               <div id="clickablePrintConsole" class="nav-list-item"><div class="list-item">about</div></div>
@@ -47,12 +49,12 @@
           </div>
         </div>
       </div> 
-      <div class="BUTTON TO MOVE ON">
-        <a href="/generate_image">
-          <button id="clickButton" class="button">
-            Create Your Story
-          </button>
-        </a> 
+        <div class="BUTTON-TO-MOVE-ON">
+          <a href="/generate_image">
+            <button id="clickButton" class="button">
+              Create Your Story
+            </button>
+          </a>       
       </div>  
     </div>
   </body>

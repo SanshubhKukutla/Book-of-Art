@@ -278,9 +278,22 @@
   left: 90px;
 }
 
+/* Add a specific z-index value to the "frame-1" image to ensure it's on top */
+.frame-1 {
+    position: relative; /* Ensure it can be z-indexed */
+    z-index: 2; /* You can adjust the value as needed */
+}
+
+.BUTTON-TO-MOVE-ON {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1; /* Ensure it's on top of other elements */
+}
+
 .button {
-  background-color: #333;
-  color: #fff;
+  background-color: #433128; /* Change the button color */
+  color: #C9AC9C;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -290,11 +303,5 @@
 }
 
 .button:hover {
-  background-color: #555;
-}
-
-/* Add a specific z-index value to the "frame-1" image to ensure it's on top */
-.frame-1 {
-    position: relative; /* Ensure it can be z-indexed */
-    z-index: 2; /* You can adjust the value as needed */
+  background-color: #9A7966; /* Change the hover color */
 }
